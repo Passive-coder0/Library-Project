@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    text-align: center;
+    color: #2d2d2d;
+}
+#add-screen {
+    background-color: rgba(0, 0, 0, .2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+form {
+    background-color: white;
+    border-radius: 10px;
+    height: 360px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    font-weight: bold;
+    padding: 20px 36px;
+}
+form ul {
+    margin: 10px 0;
+    padding: 0;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+form li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .delete {
+    margin: 0;
+}
+form h2 {
+    margin: 5px 0 30px 0;
+}
+form .button {
+    justify-content: center;
+}
+form input {
+    width: 120px;
+    height: 1.5rem;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+.top {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+button {
+    background-color: #d2eaf3;
+    border: 1px solid #d2eaf3;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 12px 22px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+.cards {
+    background-color: #f0f8ff;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 80px;
+}
+.card {
+    background-color:#add8e6;
+    width: 225px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+.card h3 {
+    margin-top: 5px;
+}
+.delete {
+    align-self: flex-end;
+    padding: 4px;
+}
+.delete:hover {
+    background-color: #d2eaf3;
+    cursor: pointer;
+}
+#close {
+    align-self: flex-end;
+    padding: 4px;
+    margin: 0;
+}
+#close:hover {
+    background-color: #d2eaf3;
+    cursor: pointer;
+}
+.check {
+    display: flex;
+    justify-content: center;
+}
+.read {
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    button {
+    padding: 10px;
+  }
+  .top {
+    padding: 0 20px;
+}
+}
